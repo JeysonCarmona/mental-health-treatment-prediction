@@ -6,17 +6,17 @@ Predicting whether a person working in tech is likely to seek mental health trea
 
 ---
 
-## 🎯 Objective
+## Objective
 
 Build and compare multiple machine learning classifiers to predict the `treatment` variable (renamed to `Target`) — whether a survey respondent has sought treatment for a mental health condition — using workplace, demographic, and attitudinal features from the survey.
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** [OSMI Mental Health in Tech Survey](https://www.kaggle.com/datasets/osmi/mental-health-in-tech-survey) (Kaggle)
 - ~1,250 survey responses, 27 original features (demographics, company policies, and personal attitudes toward mental health in the workplace)
 - **Target:** `treatment` → `Target` (0 = does not seek treatment, 1 = seeks treatment) — a near-perfectly balanced binary target
 
-## 🧭 Pipeline
+##  Pipeline
 
 ```
 Load → Cleaning → EDA → Feature Selection → Modeling → Evaluation (with & without PCA)
@@ -30,7 +30,7 @@ Load → Cleaning → EDA → Feature Selection → Modeling → Evaluation (wit
 6. **Dimensionality reduction** — PCA (96% explained variance retained) applied as an alternative pipeline, and the two approaches (with/without PCA) are compared head-to-head.
 7. **Final evaluation** — feature importance, confusion matrix, and ROC curve for the winning model.
 
-## 🏆 Results
+##  Results
 
 **Best model (without PCA): Gradient Boosting**
 
@@ -65,7 +65,7 @@ The three strongest predictors of `Target` (by Gradient Boosting feature importa
 2. **`work_interfere`** — whether mental health interferes with work
 3. **`care_options`** — awareness of employer-provided mental health care options
 
-## 📈 Key Visualizations
+##  Key Visualizations
 
 | | |
 |---|---|
@@ -80,7 +80,7 @@ The three strongest predictors of `Target` (by Gradient Boosting feature importa
 
 `Python` · `pandas` · `numpy` · `scikit-learn` · `seaborn` · `matplotlib` · `kagglehub`
 
-## 🚀 Running the Project
+## Running the Project
 
 This notebook downloads the dataset automatically via `kagglehub`, so the easiest way to run it is directly on Kaggle:
 
@@ -94,7 +94,7 @@ pip install category_encoders skrebate boruta matplotlib seaborn scikit-learn pa
 jupyter notebook mental_health_treatment_prediction.ipynb
 ```
 
-## 📁 Suggested Repository Structure
+##  Suggested Repository Structure
 
 ```
 mental-health-treatment-prediction/
@@ -107,11 +107,11 @@ mental-health-treatment-prediction/
     └── roc_curve.png
 ```
 
-## 📝 Notes
+##  Notes
 
 - The notebook text (markdown explanations, code comments, print statements, and plot titles/labels) has been fully translated to English. Variable and function names were intentionally left as-is to avoid introducing bugs.
 - Because the dataset can only be fetched through `kagglehub`/Kaggle, the chart images above are the ones already generated in the original (Spanish) run. Running the translated notebook end-to-end on Kaggle will regenerate all charts with English titles/labels — re-export them afterward to refresh the `images/` folder.
 
-## 📚 Acknowledgments
+##  Acknowledgments
 
 Dataset provided by the [Open Sourcing Mental Illness (OSMI)](https://osmihelp.org/) organization via Kaggle.
