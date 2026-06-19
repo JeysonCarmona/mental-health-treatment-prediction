@@ -76,7 +76,7 @@ The three strongest predictors of `Target` (by Gradient Boosting feature importa
 
 > **Note:** these chart images were exported directly from the notebook's last run, so their titles/axis labels are still in Spanish. Re-running the notebook end-to-end (e.g., on Kaggle) will regenerate them with the translated English labels — see *Notes* below.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 `Python` · `pandas` · `numpy` · `scikit-learn` · `seaborn` · `matplotlib` · `kagglehub`
 
